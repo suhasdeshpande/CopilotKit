@@ -833,6 +833,7 @@ export const useCopilotChatLogic = (
       });
     } else {
       defaultStopGeneration();
+      stopCurrentAgent();
     }
   }
   function reloadMessages(messageId: string) {
